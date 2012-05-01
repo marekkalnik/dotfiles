@@ -4,3 +4,5 @@ call pathogen#infect()
 
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.json set ft=javascript
+au BufRead,BufNewFile *.twig.html setfiletype htmldjango
+au BufRead,BufNewFile *.twig setfiletype htmldjango
