@@ -1,0 +1,5 @@
+# add markdown, textile, and reStructuredText
+--type-set=plaintext=.md,.mdown,.markdown,.mkdn,.mkd,.textile,.rst,.txt
+
+# add twig
+--type-set=twig=.twig,.twig.html
