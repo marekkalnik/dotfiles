@@ -25,3 +25,6 @@
 [submodule "vim/supertab"]
 	path = vim/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

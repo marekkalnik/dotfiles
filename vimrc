@@ -1,4 +1,3 @@
-" B
 " Boot and configure plugins
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -23,6 +22,7 @@ set clipboard=unnamed
 " Key bindings
 map <M-Left> <C-T>
 map <M-Right> g<C-]>
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 " Folding
 set foldenable                                   " enable folding
@@ -39,3 +39,7 @@ endif
 
 set foldtext=SimpleFoldText() " Custom fold function (cleaner than default)
 
+" Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_loc_lis=1
+let g:syntastic_enable_signs=1
