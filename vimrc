@@ -16,6 +16,7 @@ set smartcase
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set showcmd
 
 set clipboard=unnamed
 
@@ -28,8 +29,8 @@ map <Leader>n <plug>NERDTreeTabsToggle<CR>
 set foldenable                                   " enable folding
 set foldmarker={,}                               " Fold C Style code
 set foldmethod=marker                            " Fold on the marker
-set foldlevel=100                                " Do not autofold anything (but i can still fold manually)
 set foldopen=block,hor,mark,percent,quickfix,tag " what movements open folds
+set foldlevel=1
 
 if exists("SimpleFoldText")
     "function SimpleFoldText()
@@ -43,3 +44,6 @@ set foldtext=SimpleFoldText() " Custom fold function (cleaner than default)
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_loc_lis=1
 let g:syntastic_enable_signs=1
+
+" Debuger bindings
+map <Leader>b <ESC>:Bp<CR>
