@@ -17,6 +17,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set showcmd
+set hlsearch
 
 set clipboard=unnamed
 
@@ -47,3 +48,6 @@ let g:syntastic_enable_signs=1
 
 " Debuger bindings
 map <Leader>b <ESC>:Bp<CR>
+
+" Auto highlight current variable
+autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
