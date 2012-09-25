@@ -56,3 +56,12 @@ autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<c
 
 " FuzzyFinder
 map ,f :FufFile **/<CR>
+
+" Symfony2 functions
+function! Namespace()
+    return substitute(substitute(expand("%:h"), '\v^\w+\/(\u)', '\1', ''), '\/', '\\\\\\', 'g')
+endfunction
+
+function! Bundle()
+    return substitute(Namespace(), '\v^(.*)\\Bundle\\(.*)\\.*', '\1\2', '')
+endfunction
