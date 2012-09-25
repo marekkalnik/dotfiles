@@ -9,6 +9,7 @@ au BufRead,BufNewFile *.twig.html setfiletype htmldjango
 au BufRead,BufNewFile *.twig setfiletype htmldjango
 
 " Basic editor configuration
+hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 set backspace=indent,eol,start
 set shiftround
 set ignorecase
@@ -25,6 +26,7 @@ set clipboard=unnamed
 map <M-Left> <C-T>
 map <M-Right> g<C-]>
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+map <Leader>t :TagbarToggle<CR>
 
 " Folding
 set foldenable                                   " enable folding
@@ -51,3 +53,6 @@ map <Leader>b <ESC>:Bp<CR>
 
 " Auto highlight current variable
 autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+
+" FuzzyFinder
+map ,f :FufFile **/<CR>

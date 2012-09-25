@@ -1,0 +1,28 @@
+[user]
+	name = Marek Kalnik
+	email = marekk@theodo.fr
+[color]
+    branch      = auto
+    diff        = auto
+    interactive = auto
+    status      = auto
+    ui          = auto
+[push]
+	default = tracking
+[alias]
+    clo = clone
+    co  = checkout
+    st  = status
+    pur = pull --rebase
+    ci  = commit
+    rc  = rebase --continue
+    lg  = log -M --decorate --graph
+    br  = branch
+    sth = stash
+[core]
+	editor = vim
+    excludesfile = ~/.gitignore_global
+[diff]
+    tool = diffuse 
+[difftool]
+    prompt = false
