@@ -11,5 +11,8 @@ ack-conf:
 	ln -s $(CURDIR)/ackrc ~/.ackrc
 
 git-conf:
-	ln -s $(CURDIR)/gitconfig ~/.ackrc
-	ln -s $(CURDIR)/gitexcludes ~/.ackrc
+	ln -s $(CURDIR)/gitconfig ~/.gitconfig
+	ln -s $(CURDIR)/gitexcludes ~/.gitexcludes
+
+aliases:
+	ln -s $(CURDIR)/bash_aliases ~/.bash_aliases
