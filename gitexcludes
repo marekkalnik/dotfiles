@@ -1,2 +1,6 @@
+# PHPUnit
+phpunit.xml
+
 # Vim temporary files
 *.swp
+tags
