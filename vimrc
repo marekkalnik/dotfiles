@@ -4,9 +4,9 @@ call pathogen#helptags()
 call pathogen#infect()
 
 filetype plugin indent on
-autocmd BufNewFile,BufRead *.json set ft=javascript
-au BufRead,BufNewFile *.twig.html setfiletype htmldjango
-au BufRead,BufNewFile *.twig setfiletype htmldjango
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+autocmd BufRead,BufNewFile *.twig.html set filetype=htmljinja
+autocmd BufRead,BufNewFile *.twig set filetype=htmljinja
 
 " Basic editor configuration
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
@@ -56,6 +56,7 @@ autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<c
 
 " FuzzyFinder
 map ,f :FufFile **/<CR>
+map ,t :!phpunit -c app/ %<CR>
 
 " Symfony2 functions
 function! Namespace()
