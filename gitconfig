@@ -21,7 +21,7 @@
     sth = stash
 [core]
 	editor = vim
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitexcludes
 [diff]
     tool = diffuse 
 [difftool]
