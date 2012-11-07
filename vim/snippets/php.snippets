@@ -5,6 +5,9 @@ snippet cont
 
 	use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+	/**
+	 * @author Marek Kalnik <${3:marekk@theodo.fr}>
+	 */
 	class ${2:`Filename('', 'Controller')`} extends Controller
 	{
 		public function ${3:action}Action()
@@ -19,16 +22,16 @@ snippet type
 	namespace ${1:`Namespace()`};
 
 	use Symfony\Component\Form\AbstractType;
-	use Symfony\Component\Form\FormBuilder;
+	use Symfony\Component\Form\FormBuilderInterface;
 
 	/**
 	 * ${2:`Filename('', 'myClass')`}.
 	 *
-	 * @author Marc Weistroff <marc.weistroff@${2:sensio.com}>
+	 * @author Marek Kalnik <${3:marekk@theodo.fr}>
 	 */
 	class $2 extends AbstractType
 	{
-		public function buildForm(FormBuilder $builder, array $options)
+		public function buildForm(FormBuilderInterface $builder, array $options)
 		{
 			${4}
 		}
@@ -49,7 +52,7 @@ snippet bundle
 	/**
 	 * ${2:Bundle}Bundle.
 	 *
-	 * @author Marc Weistroff <marc.weistroff@${3:sensio.com}>
+	 * @author Marek Kalnik <${3:marekk@theodo.fr}>
 	 */
 	class $2Bundle extends Bundle
 	{
@@ -68,7 +71,7 @@ snippet command
 	/**
 	 * ${2}.
 	 *
-	 * @author Marc Weistroff <marc.weistroff@${3:sensio.com}>
+	 * @author Marek Kalnik <marekk@${3:theodo.fr}>
 	 */
 	class ${2:`Filename('', 'Command')`} extends ContainerAwareCommand
 	{
