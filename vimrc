@@ -46,8 +46,9 @@ let g:syntastic_check_on_open=1
 let g:syntastic_auto_loc_lis=1
 let g:syntastic_enable_signs=1
 
-" Debuger bindings
+" Debugger configuration
 map <Leader>b <ESC>:Bp<CR>
+let g:debuggerMaxDepth = 3
 
 " Auto highlight current variable
 autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
