@@ -21,6 +21,7 @@
     sth = stash
     fu  = fetch upstream
     cobra = !"git fetch upstream; git co upstream/develop; git co -b "
+    pr = pull-request
 [core]
 	editor = vim
     excludesfile = ~/.gitexcludes
