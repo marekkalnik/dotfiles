@@ -52,9 +52,9 @@ map <Leader>b <ESC>:Bp<CR>
 " Auto highlight current variable
 autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
-" FuzzyFinder
-map ,f :FufFile **/<CR>
+" PHPUnit
 map ,t :!phpunit -c app/ %<CR>
+map ,y :!phpunit %<CR>
 
 " Symfony2 functions
 function! Namespace()
