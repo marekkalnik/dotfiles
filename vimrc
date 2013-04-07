@@ -56,6 +56,10 @@ autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<c
 map ,t :!phpunit -c app/ %<CR>
 map ,y :!phpunit %<CR>
 
+" CtrlP - a file finder
+let g:ctrlp_map = '<C-P>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " Symfony2 functions
 function! Namespace()
     return substitute(substitute(expand("%:h"), '\v^\w+\/(\u)', '\1', ''), '\/', '\\\\\\', 'g')
