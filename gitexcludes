@@ -4,3 +4,10 @@ phpunit.xml
 # Vim temporary files
 *.swp
 tags
+
+# Vagrant
+.vagrant
+
+# Symfttpd
+/symfttpd/*
+symfttpd.conf.php
