@@ -13,9 +13,6 @@
 [submodule "vim/bundle/nerd-tree-tabs"]
 	path = vim/bundle/nerd-tree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "vim/bundle/fuzzy-finder"]
-	path = vim/bundle/fuzzy-finder
-	url = https://github.com/vim-scripts/FuzzyFinder.git
 [submodule "vim/bundle/l9"]
 	path = vim/bundle/l9
 	url = https://github.com/vim-scripts/L9.git
@@ -31,6 +28,9 @@
 [submodule "vim/bundle/vim-twig"]
 	path = vim/bundle/vim-twig
 	url = https://github.com/beyondwords/vim-twig.git
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
