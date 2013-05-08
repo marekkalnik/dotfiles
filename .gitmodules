@@ -37,3 +37,6 @@
 [submodule "vim/bundle/vim-less"]
 	path = vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "vim/bundle/powerline"]
+	path = vim/bundle/powerline
+	url = git@github.com:Lokaltog/powerline.git

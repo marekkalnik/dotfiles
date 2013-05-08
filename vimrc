@@ -69,3 +69,6 @@ endfunction
 function! Bundle()
     return substitute(Namespace(), '\v^(.*)\\Bundle\\(.*)\\.*', '\1\2', '')
 endfunction
+
+" Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
