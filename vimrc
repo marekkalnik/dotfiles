@@ -47,7 +47,7 @@ let g:syntastic_auto_loc_lis=1
 let g:syntastic_enable_signs=1
 
 " Debugger configuration
-map <Leader>b <ESC>:Bp<CR>
+map <Leader>b <ESC>:Breakpoint
 let g:debuggerMaxDepth = 3
 
 " Auto highlight current variable
