@@ -71,4 +71,4 @@ function! Bundle()
 endfunction
 
 " Powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
