@@ -3,3 +3,6 @@
 
 # add twig
 --type-set=twig=.twig,.twig.html
+
+# add behat
+--type-set=behat=.feature
