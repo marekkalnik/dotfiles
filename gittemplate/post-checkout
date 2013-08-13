@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Put this file at: .git/hooks/post-checkout
+# and make it executable
+# You can install it system wide too, see http://stackoverflow.com/a/2293578/685587
+
+PREV_COMMIT=$1
+POST_COMMIT=$2
+
+NOCOLOR='\e[0m'
+REDCOLOR='\e[37;41m'
+
+# Alert if composer.lock has changed
+if [[ -f composer.lock ]]; then
+    DIFF=`git diff --shortstat $PREV_COMMIT..$POST_COMMIT composer.lock`
+    if [[ $DIFF != "" ]]; then
+        echo -e "$REDCOLOR composer.lock has changed. You must run composer install$NOCOLOR"
+    fi
+fi
+
+# Alert if there is a new migration
+if [[ -d "app/DoctrineMigrations" ]]; then
+    DIFF=`git diff --shortstat $PREV_COMMIT..$POST_COMMIT app/DoctrineMigrations`
+    if [[ $DIFF != "" ]]; then
+        echo -e "$REDCOLOR Doctrine migrations may have changed. Run app/console doc:mig:stat to confirm$NOCOLOR"
+    fi
+fi
+

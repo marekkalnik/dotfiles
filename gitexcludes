@@ -4,6 +4,7 @@ phpunit.xml
 # Vim temporary files
 *.swp
 tags
+*~
 
 # Vagrant
 .vagrant

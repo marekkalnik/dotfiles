@@ -13,6 +13,7 @@ ack-conf:
 git-conf:
 	ln -s $(CURDIR)/gitconfig ~/.gitconfig
 	ln -s $(CURDIR)/gitexcludes ~/.gitexcludes
+	ln -s $(CURDIR)/gittemplate ~/.gittemplate
 
 aliases:
 	ln -s $(CURDIR)/bash_aliases ~/.bash_aliases

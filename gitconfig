@@ -31,3 +31,5 @@
     prompt = false
 [branch]
 	autosetuprebase = always
+[init]
+    templatedir = ~/.gittemplate
