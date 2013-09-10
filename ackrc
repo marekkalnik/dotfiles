@@ -6,3 +6,6 @@
 
 # add puppet
 --type-set=puppet=.pp
+
+# add behat
+--type-set=behat=.feature
