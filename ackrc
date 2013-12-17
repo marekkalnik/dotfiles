@@ -9,3 +9,9 @@
 
 # add behat
 --type-set=behat=.feature
+
+# add less
+--type-set=less=.less
+
+# add puppet
+--type-set=puppet=.pp
