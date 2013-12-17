@@ -4,5 +4,8 @@
 # add twig
 --type-set=twig=.twig,.twig.html
 
+# add puppet
+--type-set=puppet=.pp
+
 # add behat
 --type-set=behat=.feature
