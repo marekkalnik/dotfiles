@@ -46,3 +46,6 @@
 [submodule "vim/bundle/vdebug"]
 	path = vim/bundle/vdebug
 	url = https://github.com/joonty/vdebug.git
+[submodule "vim/bundle/varnish"]
+	path = vim/bundle/varnish
+	url = https://github.com/empanda/vim-varnish.git
