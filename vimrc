@@ -25,6 +25,7 @@ map <M-Left> <C-T>
 map <M-Right> g<C-]>
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 map <Leader>t :TagbarToggle<CR>
+map <Leader>f :NERDTreeFind<CR>
 
 " Folding
 set foldenable                                   " enable folding
