@@ -1,11 +1,7 @@
-all:	tmux-conf vim-conf ack-conf git-conf
+all:	tmux-conf ack-conf git-conf
 
 tmux-conf:
 	ln -s $(CURDIR)/tmux.conf ~/.tmux.conf
-
-vim-conf:
-	ln -s $(CURDIR)/vimrc ~/.vimrc
-	ln -s $(CURDIR)/vim ~/.vim
 
 ack-conf:
 	ln -s $(CURDIR)/ackrc ~/.ackrc
